@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.herasiddiqui.convert.MainActivity">
+
+    <Button
+        android:id="@+id/convertCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="convertClicked"
+        android:text="@string/convert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUSD" />
+
+    <TextView
+        android:id="@+id/textViewUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/usd"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewINR" />
+
+    <EditText
+        android:id="@+id/editTextUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/editUSD"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toEndOf="@+id/textViewUSD"
+        app:layout_constraintTop_toBottomOf="@+id/editTextINR" />
+
+    <TextView
+        android:id="@+id/textViewINR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/inr"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextINR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/editINR"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toEndOf="@+id/textViewINR"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
